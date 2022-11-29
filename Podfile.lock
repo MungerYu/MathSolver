@@ -7,14 +7,18 @@ DEPENDENCIES:
   - iosMath (~> 0.7.2)
   - MathSolver (from `./`)
 
+SPEC REPOS:
+  trunk:
+    - iosMath
+
 EXTERNAL SOURCES:
   MathSolver:
-    :path: ./
+    :path: "./"
 
 SPEC CHECKSUMS:
   iosMath: b0907041e16ff69b5da8833dd47126ac68d987ae
   MathSolver: 5556263e656a5cb5848bc2eeb536e75d46e4d39a
 
-PODFILE CHECKSUM: d6e15b39ef4bf22460ed27a3d3bfe4ef34622367
+PODFILE CHECKSUM: 69d9e5b4a4c01920fae6f4a565ef8a4c2d1e9d7f
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.11.2

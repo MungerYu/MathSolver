@@ -376,6 +376,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49DEC8521CF774E4000053CD /* Build configuration list for PBXNativeTarget "MathSolver" */;
 			buildPhases = (
+				736F2E67D0A988A9E5D17C74 /* [CP] Check Pods Manifest.lock */,
 				BD75F2C68D453573DE52C10A /* 📦 Check Pods Manifest.lock */,
 				49DEC8451CF774E4000053CD /* Sources */,
 				49DEC8461CF774E4000053CD /* Frameworks */,
@@ -395,12 +396,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49DEC8611CF7755F000053CD /* Build configuration list for PBXNativeTarget "MathSolverTests" */;
 			buildPhases = (
+				56A2F9503B8C576F82A89920 /* [CP] Check Pods Manifest.lock */,
 				BDAF5AA85E8C7760FB36C492 /* 📦 Check Pods Manifest.lock */,
 				49DEC8551CF7755F000053CD /* Sources */,
 				49DEC8561CF7755F000053CD /* Frameworks */,
 				49DEC8571CF7755F000053CD /* Resources */,
-				7B820089F0A6CEB926CA0F50 /* 📦 Embed Pods Frameworks */,
 				EEDF3B3D383953AA408972FA /* 📦 Copy Pods Resources */,
+				7ED175D41C20923FEBF3096D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -458,19 +460,76 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7B820089F0A6CEB926CA0F50 /* 📦 Embed Pods Frameworks */ = {
+		56A2F9503B8C576F82A89920 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathSolverTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		736F2E67D0A988A9E5D17C74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathSolver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ED175D41C20923FEBF3096D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MathSolverTests/Pods-MathSolverTests-resources.sh",
+				"${PODS_ROOT}/iosMath/fonts/latinmodern-math.otf",
+				"${PODS_ROOT}/iosMath/fonts/texgyretermes-math.otf",
+				"${PODS_ROOT}/iosMath/fonts/xits-math.otf",
+				"${PODS_ROOT}/iosMath/fonts/latinmodern-math.plist",
+				"${PODS_ROOT}/iosMath/fonts/texgyretermes-math.plist",
+				"${PODS_ROOT}/iosMath/fonts/xits-math.plist",
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/latinmodern-math.otf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/texgyretermes-math.otf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xits-math.otf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/latinmodern-math.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/texgyretermes-math.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/xits-math.plist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathSolverTests/Pods-MathSolverTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MathSolverTests/Pods-MathSolverTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD75F2C68D453573DE52C10A /* 📦 Check Pods Manifest.lock */ = {
